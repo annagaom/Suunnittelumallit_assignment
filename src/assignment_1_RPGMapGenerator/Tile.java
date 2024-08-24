@@ -60,8 +60,6 @@ class RoadTile implements Tile {
 
     public void action() {
         // Optional action method
-        String action = "You are on a road.";
-        System.out.println(action);
 
     }
 }

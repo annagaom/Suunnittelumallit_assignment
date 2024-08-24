@@ -61,7 +61,7 @@ class WildernessMap extends Map {
         return switch (randomType) {
             case 0 -> new SwampTile();
             case 1 -> new WaterTile();
-            case 2 -> new TreeTile();
+            case 2 -> new ForestTile();
             default -> throw new IllegalArgumentException("Unknown tile type");
         };
     }
