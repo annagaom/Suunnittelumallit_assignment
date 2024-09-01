@@ -1,4 +1,5 @@
-package assignment2__ASCII_art_user_interfaces;
+
+package test.test;
 
 // Abstrakti Button-luokka
 abstract class Button {
@@ -92,7 +93,10 @@ class CheckboxA extends Checkbox {
         else {
             System.out.print("[ ] " + text);
         }
+        //System.out.println();
     }
+
+
 
 }
 
@@ -134,11 +138,13 @@ class CheckboxB extends Checkbox {
 
     @Override
     public void display() {
-        if (checked)
-            System.out.print("{X} " + text);
-        else {
-            System.out.print("{ } " + text);
-        }
+        System.out.print("{ } " + text);
+        System.out.println();
+    }
+
+    public void display(boolean checked) {
+        System.out.print(checked ? "{X} " : "{ } ");
+        System.out.println(text);
     }
 }
 
@@ -185,16 +191,14 @@ class BFactory extends UIFactory {
     }
 }
 
-
-
 // Pääluokka, joka demonstroi käyttöä
 public class Main {
     public static void main(String[] args) {
-
         // Valitse käytettävä tyyli A tai B
-        //UIFactory factory = new AFactory();
-        UIFactory factory = new BFactory();
+        UIFactory factory = new AFactory();
+        //UIFactory factory = new BFactory();// Vaihtoehtoisesti new BFactory();
 
+        // Luo käyttöliittymäelementit
         Button button = factory.createButton("Lähetä");
         TextField textField = factory.createTextField("Syötä nimi");
         Checkbox checkbox = factory.createCheckbox("Hyväksyn ehdot");
@@ -209,6 +213,8 @@ public class Main {
         button.setText("Vahvista");
         textField.setText("Syötä sposti");
         checkbox.setText("Hyväksyn ehdot");
+
+
 
         // Näytä päivitetty tila
         checkbox.toggle();
