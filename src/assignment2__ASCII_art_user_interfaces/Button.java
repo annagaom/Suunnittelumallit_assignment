@@ -14,7 +14,7 @@ abstract class Button {
     }
 }
 
-// ButtonA-luokka tyyli A:lle
+// ButtonA tyyli
 class ButtonA extends Button {
     public ButtonA(String text) {
         super(text);
@@ -28,7 +28,7 @@ class ButtonA extends Button {
     }
 }
 
-// ButtonB-luokka tyyli B:lle
+// ButtonB tyyli
 class ButtonB extends Button {
     public ButtonB(String text) {
         super(text);

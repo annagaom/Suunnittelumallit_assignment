@@ -1,6 +1,5 @@
 package assignment2__ASCII_art_user_interfaces;
 
-// Abstrakti Checkbox-luokka
 abstract class Checkbox {
     protected String text;
     protected boolean checked;
