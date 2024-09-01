@@ -1,4 +1,4 @@
-package assignment_1_RPGMapGenerator;
+package assignment1_RPGMapGenerator;
 // Tile Interface
 public interface Tile {
     char getCharacter();

@@ -1,4 +1,4 @@
-package assignment_1_RPGMapGenerator;
+package assignment1_RPGMapGenerator;
 import java.util.Random;
 
 // Abstract Map Class
