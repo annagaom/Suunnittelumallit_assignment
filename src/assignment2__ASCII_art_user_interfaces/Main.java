@@ -1,27 +1,5 @@
 package assignment2__ASCII_art_user_interfaces;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Pääluokka, joka demonstroi käyttöä
 public class Main {
     public static void main(String[] args) {
