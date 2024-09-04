@@ -10,21 +10,17 @@ public class Main {
         // Create departments
         OrganizationComponent sales = new Department("Sales");
         OrganizationComponent it = new Department("IT");
-        OrganizationComponent hr = new Department("HR");
 
         // Add employees to departments
         sales.add(john);
         it.add(jane);
-        //sales.remove(jane); // Jane quits
-        hr.add(alice);
+        it.add(alice);
 
 
         // Create a root department (the entire organization)
         OrganizationComponent organization = new Department("Organization");
         organization.add(sales);
         organization.add(it);
-        organization.add(hr);
-        //organization.remove(hr); // HR department is closed
 
         // Print total salary
         System.out.println(" " );
