@@ -1,12 +1,9 @@
 package observer.view;
-
 import observer.model.WeatherObserver;
 
-// Second observer class (Observer2)
 public class ObserverB implements WeatherObserver {
     private String observerName;
 
-    // Constructor for Observer2
     public ObserverB(String observerName) {
         this.observerName = observerName;
     }

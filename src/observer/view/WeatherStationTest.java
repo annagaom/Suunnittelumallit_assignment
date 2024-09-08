@@ -1,13 +1,10 @@
 package observer.view;
-
 import observer.model.WeatherStation;
 
 public class WeatherStationTest {
     public static void main(String[] args) {
-        // Create a weather station
         WeatherStation weatherStation = new WeatherStation();
 
-        // Create observers
         ObserverA mobileApp = new ObserverA("MobileApp");
         ObserverB desktopApp = new ObserverB("DesktopApp");
 

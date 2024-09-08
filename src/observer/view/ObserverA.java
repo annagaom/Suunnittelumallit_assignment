@@ -1,8 +1,6 @@
 package observer.view;
-
 import observer.model.WeatherObserver;
 
-// First observer class (Observer1)
 public class ObserverA implements WeatherObserver {
     private String observerName;
 

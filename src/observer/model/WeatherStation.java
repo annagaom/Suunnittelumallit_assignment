@@ -1,5 +1,4 @@
 package observer.model;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -19,7 +18,7 @@ public class WeatherStation implements Runnable {
         running = true;
     }
 
-    // Register an observer
+    // add an observer
     public void addObserver(WeatherObserver observer) {
         observerList.add(observer);
     }
