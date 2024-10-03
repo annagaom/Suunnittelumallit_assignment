@@ -4,12 +4,12 @@ package ChainofResponsibility;
 public class Main {
     public static void main(String[] args) {
         // Create handler chain
-        GeneralFeedbackHandler generalFeedbackHandler = new GeneralFeedbackHandler();
-        DevelopmentSuggestionHandler developmentSuggestionHandler = new DevelopmentSuggestionHandler();
+        Handler.GeneralFeedbackHandler generalFeedbackHandler = new Handler.GeneralFeedbackHandler();
+        Handler.DevelopmentSuggestionHandler developmentSuggestionHandler = new Handler.DevelopmentSuggestionHandler();
         developmentSuggestionHandler.setSuccessor(generalFeedbackHandler);
-        ContactRequestHandler contactRequestHandler = new ContactRequestHandler();
+        Handler.ContactRequestHandler contactRequestHandler = new Handler.ContactRequestHandler();
         contactRequestHandler.setSuccessor(developmentSuggestionHandler);
-        CompensationClaimHandler compensationClaimHandler = new CompensationClaimHandler();
+        Handler.CompensationClaimHandler compensationClaimHandler = new Handler.CompensationClaimHandler();
         compensationClaimHandler.setSuccessor(contactRequestHandler);
 
         // Create various messages
